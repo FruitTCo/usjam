@@ -6,6 +6,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 nav {
   width: 100vw;
   height: 124px;
@@ -402,6 +406,23 @@ nav .nav-contact .nav-link:nth-child(1) {
   height: 40px;
   display: grid;
   place-items: center;
+}
+.contact .contact-content .contact-content-right .submit-btn {
+  padding: 1.4rem 3rem;
+  border-radius: 20px;
+  background: #4C40F7;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  transition: all 0.25s;
+}
+.contact .contact-content .contact-content-right .submit-btn p {
+  margin-right: 30px;
+  font-size: 1.2rem;
+}
+.contact .contact-content .contact-content-right .submit-btn:hover {
+  transform: translateY(-2px);
 }
 
 .footer {

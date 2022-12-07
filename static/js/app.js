@@ -1,3 +1,6 @@
+// initialize aos
+AOS.init();
+
 // hero section scroll 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
@@ -70,7 +73,7 @@ const swiper1 = new Swiper('.swiper1', {
         $("html, body").animate({
             scrollTop: $($(this).attr("href")).offset().top + "px"
         }, {
-            duration: 1000
+            duration: 1000,
         });
         return false;
     });

@@ -17,6 +17,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
         integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="static/css/style.css">
     <title>Usjam Nigeria LTD</title>
 </head>
@@ -34,7 +35,7 @@
             <a class="nav-link js-scroll" href="#about">About us</a>
             <a class="nav-link js-scroll" href="#services">Services</a>
             <a class="nav-link js-scroll" href="#team">Team</a>
-            <a href="#" class="nav-link">Projects</a>
+            <a href="project.html" class="nav-link">Projects</a>
             <a class="nav-link js-scroll" href="#contact">Contact</a>
 
             <!-- contact methods -->
@@ -125,11 +126,12 @@
 
 
     <!-- welcome section -->
-    <section class="welcome">
+    <section class="welcome" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="500">
 
         <h1>Welcome to Usjam Nigeria Limited.</h1>
 
-        <p class="text">USJAM NIG LTD is a leading construction and facility management company based in Nigeria. With a
+        <p class="text" data-aos="fade" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">USJAM NIG LTD
+            is a leading construction and facility management company based in Nigeria. With a
             team of
             highly trained and experienced professionals, we are equipped to handle all of your construction and
             facility management needs, from general consulting to full-scale renovations and construction projects. Our
@@ -140,7 +142,8 @@
 
 
     <!-- our services -->
-    <section id="services" class="services">
+    <section id="services" class="services" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+        data-aos-duration="500">
 
         <h1>Our Services</h1>
 
@@ -403,6 +406,15 @@
                     </div>
                 </div>
 
+                <button class="submit-btn" type="submit">
+                    <p>Submit</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" fill="none" viewBox="0 0 22 16">
+                        <path fill-rule="evenodd"
+                            d="M14.707.293a1 1 0 0 0-1.414 0 1 1 0 0 0 0 1.414L18.586 7H1a1 1 0 1 0 0 2h17.586l-5.293 5.293a1 1 0 0 0 1.414 1.414l7-7c.183-.183.28-.419.292-.659L22 8m-.076-.383c-.049-.118-.121-.228-.217-.324l-7-7m7.217 7.324c.048.115.075.241.076.374z"
+                            fill="#fff"></path>
+                    </svg>
+                </button>
+
             </div>
         </div>
     </section>
@@ -419,6 +431,7 @@
 
     <!-- scripts -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="static/js/app.js"></script>
 </body>

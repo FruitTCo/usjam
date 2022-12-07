@@ -13,6 +13,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 nav {
     width: 100vw;
     height: 124px;
@@ -512,6 +516,26 @@ nav {
                     display: grid;
                     place-items: center;
                 }
+            }
+
+            .submit-btn {
+                padding: 1.4rem 3rem;
+                border-radius: 20px;
+                background: #4C40F7;
+                border: none;
+                color: white;
+                display: flex;
+                align-items: center;
+                transition: all .25s;
+
+                p {
+                    margin-right: 30px;
+                    font-size: 1.2rem;
+                }
+
+                &:hover {
+                    transform: translateY(-2px);
+                  }
             }
         }
     }
