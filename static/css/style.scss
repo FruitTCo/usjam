@@ -166,7 +166,7 @@ nav {
                 // transition: ease 0;
             }
         }
-        
+
         .header__burger {
             display: block;
             z-index: 12;
@@ -1079,6 +1079,10 @@ nav {
         flex: 1;
         padding: 0 3rem 3rem 3rem;
         color: white;
+
+        @media only screen and (max-width: 639px) {
+            padding: 0 3rem 0 3rem;
+        }
 
         p {
             margin-bottom: 1rem;

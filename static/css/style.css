@@ -834,6 +834,11 @@ nav .nav-link-container .nav-link:nth-last-child(1) {
   padding: 0 3rem 3rem 3rem;
   color: white;
 }
+@media only screen and (max-width: 639px) {
+  .projects .content {
+    padding: 0 3rem 0 3rem;
+  }
+}
 .projects .content p {
   margin-bottom: 1rem;
   padding-bottom: 1rem;
