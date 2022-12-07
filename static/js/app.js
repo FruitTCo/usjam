@@ -1,5 +1,7 @@
 // initialize aos
-AOS.init();
+AOS.init({
+    once: false
+});
 
 // hero section scroll 
 const swiper = new Swiper('.swiper', {
