@@ -775,6 +775,7 @@ nav.fixed-top img {
   visibility: hidden;
   background: #111029;
   transition: all ease-in-out 0.25s;
+  overflow-x: scroll;
 }
 .projects.visible {
   transform: translate(0);
@@ -826,6 +827,67 @@ nav.fixed-top img {
 @media only screen and (max-width: 639px) {
   .projects .top {
     height: 80px;
+  }
+}
+.projects .content {
+  flex: 1;
+  padding: 0 3rem 3rem 3rem;
+  color: white;
+}
+.projects .content p {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.5);
+}
+.projects .content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.projects .content .swiper2 {
+  height: 100%;
+  width: 100%;
+  background: #2e2c46;
+  position: relative;
+}
+.projects .content .swiper2 .swiper-wrapper .swiper-slide {
+  display: flex;
+}
+@media only screen and (max-width: 639px) {
+  .projects .content .swiper2 .swiper-wrapper .swiper-slide {
+    flex-direction: column;
+  }
+}
+.projects .content .swiper2 .swiper-wrapper .swiper-slide .swiper-zoom-container {
+  flex: 1;
+}
+.projects .content .swiper2 .swiper-wrapper .swiper-slide .swiper-zoom-container img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.projects .content .swiper2 .swiper-wrapper .swiper-slide .overlay {
+  flex: 2;
+  padding: 3rem;
+}
+.projects .content .swiper2 .swiper2-button-prev,
+.projects .content .swiper2 .swiper2-button-next {
+  position: fixed;
+  top: 80%;
+  z-index: 2;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+.projects .content .swiper2 .swiper2-button-prev {
+  left: 1rem;
+}
+.projects .content .swiper2 .swiper2-button-next {
+  right: 1rem;
+}
+@media only screen and (max-width: 639px) {
+  .projects .content h1 {
+    font-size: 2.6rem;
   }
 }
 

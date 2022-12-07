@@ -91,6 +91,40 @@ const swiper1 = new Swiper('.swiper1', {
     // },
 });
 
+
+// projects section scroll 
+const swiper2 = new Swiper('.swiper2', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // load all images
+    preloadImages: true,
+
+    // autoplay
+    autoplay: {
+        delay: 5000,
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper2-button-next',
+        prevEl: '.swiper2-button-prev',
+    },
+
+    slidesPerView: 1,
+    grid: {
+        rows: 1,
+    },
+    spaceBetween: 30,
+
+    zoom: {
+        maxRatio: 5,
+    },
+});
+
+
+// remove 
 function scrollRemove() {
     var header = $('.js-header'),
         burger = header.find('.js-header-burger'),

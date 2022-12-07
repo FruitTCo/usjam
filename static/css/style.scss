@@ -1012,6 +1012,7 @@ nav {
     visibility: hidden;
     background: #111029;
     transition: all ease-in-out .25s;
+    overflow-x: scroll;
 
     &.visible {
         transform: translate(0);
@@ -1070,9 +1071,82 @@ nav {
             }
         }
 
-
         @media only screen and (max-width: 639px) {
             height: 80px;
+        }
+    }
+
+    .content {
+        flex: 1;
+        padding: 0 3rem 3rem 3rem;
+        color: white;
+
+        p {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .swiper2 {
+            height: 100%;
+            width: 100%;
+            background: #2e2c46;
+            position: relative;
+
+            .swiper-wrapper {
+                .swiper-slide {
+                    display: flex;
+
+                    @media only screen and (max-width: 639px) {
+                        flex-direction: column;
+                    }
+
+                    .swiper-zoom-container {
+                        flex: 1;
+
+                        img {
+                            width: 100%;
+                            // height: 100px;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .overlay {
+                        flex: 2;
+                        padding: 3rem;
+                    }
+                }
+            }
+
+            .swiper2-button-prev,
+            .swiper2-button-next {
+                position: fixed;
+                top: 80%;
+                z-index: 2;
+                padding: 1rem;
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 2px;
+            }
+            
+            .swiper2-button-prev {
+                left: 1rem;
+            }
+            
+            .swiper2-button-next {
+                right: 1rem;
+            }
+        }
+
+        @media only screen and (max-width: 639px) {
+            h1 {
+                font-size: 2.6rem;
+            }
         }
     }
 }
