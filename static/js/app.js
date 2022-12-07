@@ -152,3 +152,19 @@ document.addEventListener("DOMContentLoaded", function(){
         } 
     });
   }); 
+
+
+
+// toggle projects container
+(function () {
+    var header = $('.js-header'),
+        button = $('.project-button'),
+        html = $('html'),
+        body = $('body');
+        wrapper = $('.projects'),
+    button.on('click', function () {
+        wrapper.toggleClass('visible');
+        html.toggleClass('no-scroll');
+        body.toggleClass('no-scroll');
+    });
+})(); 

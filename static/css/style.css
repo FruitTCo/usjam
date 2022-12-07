@@ -83,6 +83,7 @@ nav .nav-link-container .nav-link {
   color: rgba(0, 0, 0, 0.6);
   transition: ease 0.2s;
   padding: 1rem;
+  cursor: pointer;
 }
 nav .nav-link-container .nav-link:hover {
   color: black;
@@ -760,6 +761,71 @@ nav.fixed-top img {
 @media only screen and (max-width: 639px) {
   .contact {
     padding: 4rem 2rem 2rem 2rem;
+  }
+}
+
+.projects {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateX(-100%);
+  z-index: 20;
+  visibility: hidden;
+  background: #111029;
+  transition: all ease-in-out 0.25s;
+}
+.projects.visible {
+  transform: translate(0);
+  background: #111029;
+  visibility: visible;
+}
+.projects .top {
+  width: 100vw;
+  height: 124px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 2rem;
+  transition: ease 0.5s;
+}
+.projects .top .header__burger__ {
+  width: 35px;
+  height: 25px;
+  position: relative;
+  border: none;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  background: none;
+}
+.projects .top .header__burger__:hover {
+  opacity: 0.85;
+}
+.projects .top .header__burger__ span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+.projects .top .header__burger__ span:nth-child(1) {
+  top: 18px;
+  transform: rotate(135deg);
+}
+.projects .top .header__burger__ span:nth-child(2) {
+  top: 18px;
+  transform: rotate(-135deg);
+}
+@media only screen and (max-width: 639px) {
+  .projects .top {
+    height: 80px;
   }
 }
 
