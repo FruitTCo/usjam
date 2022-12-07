@@ -191,8 +191,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 // toggle projects container
 (function () {
-    var header = $('.js-header'),
-        button = $('.project-button'),
+    var button = $('.project-button'),
         html = $('html'),
         body = $('body');
         wrapper = $('.projects'),
@@ -200,5 +199,18 @@ document.addEventListener("DOMContentLoaded", function(){
         wrapper.toggleClass('visible');
         html.toggleClass('no-scroll');
         body.toggleClass('no-scroll');
+    });
+})(); 
+
+// toggle projects container
+(function () {
+    var button = $('.project-button-2'),
+        html = $('html'),
+        body = $('body');
+        wrapper = $('.projects'),
+    button.on('click', function () {
+        wrapper.removeClass('visible');
+        html.removeClass('no-scroll');
+        body.removeClass('no-scroll');
     });
 })(); 
