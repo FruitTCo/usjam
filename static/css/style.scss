@@ -1086,8 +1086,7 @@ nav {
     visibility: hidden;
     background: #111029;
     transition: all ease-in-out .25s;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow: hidden;
 
     &.visible {
         transform: translate(0);
