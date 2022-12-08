@@ -761,7 +761,7 @@ nav .nav-link-container .nav-link:nth-last-child(1) {
 }
 .contact .contact-content .contact-content-right .input-container input,
 .contact .contact-content .contact-content-right .input-container textarea {
-  flex: 1;
+  width: 100%;
   border: none;
   outline: none;
   background: none;
