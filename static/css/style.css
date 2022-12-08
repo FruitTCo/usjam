@@ -661,6 +661,8 @@ nav .nav-link-container .nav-link:nth-last-child(1) {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 0 0;
+     object-position: 0 0;
   filter: grayscale(100%);
   opacity: 0.4;
 }
