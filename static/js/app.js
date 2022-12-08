@@ -213,4 +213,4 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 })(); 
 
-document.getElementById("logo").addEventListener("click", () => location.reload())
+$("#logo").on('click touchstart', function () {location.reload()})
