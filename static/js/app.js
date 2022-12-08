@@ -212,3 +212,5 @@ document.addEventListener("DOMContentLoaded", function () {
             wrapper.removeClass('visible');
         });
 })(); 
+
+document.getElementById("logo").addEventListener("click", () => location.reload())
