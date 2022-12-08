@@ -831,7 +831,8 @@ nav .nav-link-container .nav-link:nth-last-child(1) {
   visibility: hidden;
   background: #111029;
   transition: all ease-in-out 0.25s;
-  overflow-x: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 .projects.visible {
   transform: translate(0);
