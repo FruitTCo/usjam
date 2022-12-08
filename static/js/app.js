@@ -198,9 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
         body = $('body');
     wrapper = $('.projects'),
         button.on('click', function () {
-            wrapper.toggleClass('visible');
-            html.toggleClass('no-scroll');
-            body.toggleClass('no-scroll');
+            wrapper.addClass('visible');
         });
 })();
 
@@ -212,7 +210,5 @@ document.addEventListener("DOMContentLoaded", function () {
     wrapper = $('.projects'),
         button.on('click', function () {
             wrapper.removeClass('visible');
-            html.removeClass('no-scroll');
-            body.removeClass('no-scroll');
         });
 })(); 
