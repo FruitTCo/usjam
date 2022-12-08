@@ -416,6 +416,7 @@ nav .nav-link-container .nav-link:nth-last-child(1) {
   align-items: flex-start;
 }
 .services .content .item {
+  flex: 1;
   padding: 2rem 0;
 }
 .services .content .item:nth-child(2n) {

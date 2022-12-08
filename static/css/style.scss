@@ -546,6 +546,7 @@ nav {
         align-items: flex-start;
 
         .item {
+            flex: 1;
             padding: 2rem 0;
 
             &:nth-child(2n) {
