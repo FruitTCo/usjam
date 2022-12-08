@@ -168,24 +168,26 @@ function scrollRemove() {
         html.toggleClass('no-scroll');
         body.toggleClass('no-scroll');
     });
-})(); 
+})();
 
 
 // navbar
-document.addEventListener("DOMContentLoaded", function(){
-    window.addEventListener('scroll', function() {
+document.addEventListener("DOMContentLoaded", function () {
+    window.addEventListener('scroll', function () {
         if (window.scrollY > 50) {
-          document.getElementById('header').classList.add('fixed-top');
-          // add padding top to show content behind navbar
-          navbar_height = document.querySelector('#header').offsetHeight;
-          document.body.style.paddingTop = navbar_height + 'px';
+            document.getElementById('header').classList.add('fixed-top');
+            // add padding top to show content behind navbar
+            if (window.innerWidth <= 767) {
+                navbar_height = document.querySelector('#header').offsetHeight;
+                document.body.style.paddingTop = navbar_height + 'px';
+            }
         } else {
-          document.getElementById('header').classList.remove('fixed-top');
-           // remove padding top from body
-          document.body.style.paddingTop = '0';
-        } 
+            document.getElementById('header').classList.remove('fixed-top');
+            // remove padding top from body
+            document.body.style.paddingTop = '0';
+        }
     });
-  }); 
+});
 
 
 
@@ -194,23 +196,23 @@ document.addEventListener("DOMContentLoaded", function(){
     var button = $('.project-button'),
         html = $('html'),
         body = $('body');
-        wrapper = $('.projects'),
-    button.on('click', function () {
-        wrapper.toggleClass('visible');
-        html.toggleClass('no-scroll');
-        body.toggleClass('no-scroll');
-    });
-})(); 
+    wrapper = $('.projects'),
+        button.on('click', function () {
+            wrapper.toggleClass('visible');
+            html.toggleClass('no-scroll');
+            body.toggleClass('no-scroll');
+        });
+})();
 
 // toggle projects container
 (function () {
     var button = $('.project-button-2'),
         html = $('html'),
         body = $('body');
-        wrapper = $('.projects'),
-    button.on('click', function () {
-        wrapper.removeClass('visible');
-        html.removeClass('no-scroll');
-        body.removeClass('no-scroll');
-    });
+    wrapper = $('.projects'),
+        button.on('click', function () {
+            wrapper.removeClass('visible');
+            html.removeClass('no-scroll');
+            body.removeClass('no-scroll');
+        });
 })(); 
