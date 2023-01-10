@@ -74,7 +74,15 @@ const swiper1 = new Swiper('.swiper1', {
         delay: 5000,
     },
 
-    slidesPerView: window.innerWidth < 1279 ? 1 : 2,
+    breakpoints: {
+        1040: {
+          slidesPerView: 3,
+        },
+        820: {
+          slidesPerView: 2,
+        }
+      },
+
     grid: {
         rows: 1,
     },
